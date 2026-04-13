@@ -4,11 +4,11 @@ catalog:
   '@commitlint/cli': ^20.5.0
   '@commitlint/config-conventional': ^20.5.0
   '@faker-js/faker': ^10.4.0
-  '@orpc/client': ^1.13.13
-  '@orpc/json-schema': ^1.13.13
-  '@orpc/openapi': ^1.13.13
-  '@orpc/server': ^1.13.13
-  '@orpc/tanstack-query': ^1.13.13
+  '@orpc/client': ^1.13.14
+  '@orpc/json-schema': ^1.13.14
+  '@orpc/openapi': ^1.13.14
+  '@orpc/server': ^1.13.14
+  '@orpc/tanstack-query': ^1.13.14
   '@rolldown/plugin-babel': ^0.2.2
   '@storybook/addon-a11y': ^10.3.5
   '@storybook/addon-docs': ^10.3.5
@@ -25,7 +25,7 @@ catalog:
   '@tanstack/react-query-devtools': ^5.99.0
   '@tanstack/react-router': ^1.168.19
   '@tanstack/react-router-devtools': ^1.166.13
-  '@tanstack/react-start': ^1.167.16
+  '@tanstack/react-start': ^1.167.33
   '@tanstack/react-table': ^8.21.3
   '@total-typescript/ts-reset': ^0.6.1
   '@types/better-sqlite3': ^7.6.13
@@ -40,8 +40,8 @@ catalog:
   arkregex: ^0.0.5
   arktype: ^2.2.0
   babel-plugin-react-compiler: ^1.0.0
-  better-auth: ^1.5.6
-  better-sqlite3: ^12.8.0
+  better-auth: ^1.6.2
+  better-sqlite3: ^12.9.0
   class-variance-authority: ^0.7.1
   clsx: ^2.1.1
   drizzle-kit: ^0.31.10
@@ -101,7 +101,7 @@ overrides:
   'h3@<2.0.1-rc.18': '>=2.0.1-rc.20'
   h3@>=2.0.0-beta.0 <=2.0.1-rc.16: '>=2.0.1-rc.17'
   h3@>=2.0.0-beta.4 <2.0.1-rc.18: '>=2.0.1-rc.18'
-  h3@>=2.0.1-alpha.0 <=2.0.1-rc.16: '>=2.0.1-rc.17'
+  h3@>=2.0.1-alpha.0 <=2.0.1-rc.16: '>=2.0.1-rc.20'
   vite: 'catalog:'
   vitest: 'catalog:'
 
