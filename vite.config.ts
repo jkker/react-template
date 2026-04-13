@@ -29,6 +29,9 @@ export default defineConfig({
     arkenvVitePlugin(Env),
   ],
   devtools: { enabled: process.env.DEVTOOLS === 'true' },
+  optimizeDeps: {
+    include: ['i18next', 'i18next-browser-languagedetector', 'i18next-http-backend'],
+  },
   server: { port: Number(process.env.PORT) || 5173 },
 
   // ── Format (oxfmt) ────────────────────────────────────────────────

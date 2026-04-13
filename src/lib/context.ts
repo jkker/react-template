@@ -62,7 +62,7 @@ export function createContext<T>({
   errorMessage,
   defaultValue,
 }: CreateContextOptions<T> = {}): CreateContextReturn<T> {
-  const Context = createReactContext<T | undefined>(defaultValue)
+  const Context = createReactContext(defaultValue)
   Context.displayName = name
 
   const useContext = (): T => {

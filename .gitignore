@@ -94,6 +94,7 @@ Thumbs.db
 /tmp
 ./*.zip
 tmp*
+.codex
 
 # Playwright
 playwright-report

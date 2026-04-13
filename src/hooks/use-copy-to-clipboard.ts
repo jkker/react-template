@@ -10,7 +10,6 @@ export function useCopyToClipboard() {
     { timeout = 2_000, withToast = false }: { timeout?: number; withToast?: boolean } = {},
   ) => {
     if (!navigator?.clipboard) {
-      console.warn('Clipboard not supported')
       return false
     }
 
@@ -29,8 +28,7 @@ export function useCopyToClipboard() {
       }
 
       return true
-    } catch (error) {
-      console.warn('Copy failed', error)
+    } catch {
       setText(undefined)
       return false
     }

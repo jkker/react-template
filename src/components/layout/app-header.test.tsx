@@ -10,6 +10,7 @@ import { expect, test } from 'vite-plus/test'
 import { render } from 'vitest-browser-react'
 
 import { SidebarProvider } from '#/components/ui/sidebar'
+import { ReactI18nextProvider } from '#/lib/i18next'
 
 import { AppHeader } from './app-header'
 
@@ -20,9 +21,11 @@ import { AppHeader } from './app-header'
 async function createTestRouterForPath(initialPath: string) {
   const rootRoute = createRootRoute({
     component: () => (
-      <SidebarProvider>
-        <AppHeader />
-      </SidebarProvider>
+      <ReactI18nextProvider>
+        <SidebarProvider>
+          <AppHeader />
+        </SidebarProvider>
+      </ReactI18nextProvider>
     ),
   })
 
